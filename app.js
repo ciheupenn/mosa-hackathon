@@ -222,12 +222,12 @@ function loadNextQuestion () {
 
         let format = {
             frontend: ["Front-end Software Engineer", 'You are creative and like UI and design, and like ever-changing tech stacks and new technology'],
-            backend: ["Back-end Software Engineer",' You like working with APIs and servers'],
-            data: ["Data Scientist", 'You like working with data and models'],
-            qa: ["QA Engineer", 'You like testing'],
-            machine: ["Machine Learning Engineer", 'You like building prediction models'],
-            embedded: ["Embedded Software Engineer", "You like hardware and robots"],
-            security: ["Security Software Engineer", 'You like testing security and maintaining secure systems']
+            backend: ["Back-end Software Engineer",' You like working with APIs and servers, and enjoy building and maintain the mechanisms that process data and perform actions on websites'],
+            data: ["Data Scientist", 'You like working with data and models. You enjoy the process of gathering and analyzing data, using various types of analytics and reporting tools to detect patterns, trends and relationships in data sets'],
+            qa: ["QA Engineer", 'You like testing and identifying bugs in software product/project.'],
+            machine: ["Machine Learning Engineer", 'You like building prediction models and enjoy designing the AI algorithms capable of learning and making predictions that define machine learning'],
+            embedded: ["Embedded Software Engineer", "You like hardware and robots, and have a general idea of the embedded system and its limits."],
+            security: ["Security Software Engineer", 'You like testing security and protecting computer networks from cyberattacks and unauthorized access.']
         }
         console.log('format',format)
         console.log(format[maxRole])
@@ -235,7 +235,7 @@ function loadNextQuestion () {
         container.style.display = 'none';
         result.innerHTML =
          `
-        <h1>Your best fit software engineering role is: ${ format[maxRole][0] }</h1>
+        <div class="outcome">Your best fit software engineering role is: ${ format[maxRole][0] }!</div>
          
          <div class="summary">${format[maxRole][1]}</div>
 
