@@ -1,18 +1,54 @@
-Submission for MCIT Fall 2022 MOSA Hackathon
-Contributors: Joshua Yannix, Jiayi Deng, Cindy He
+# Project Title:
+Software Engineer Type Quiz
 
-Ever wondered what kind of software engineer you should be? Take our Software Engineer quiz to find out!
 
-Our quiz is a vanilla JS web app built with with HTML, CSS, and JS. Specifically tailored for MCIT students, our quiz will take you through a series of questions designed to see what your interests and strengths are. At the end, it will recommend a specific type of software engineering role!
+### Project summary
 
-The answer to each question is mapped to one of 7 SWE roles:
-1. Frontend
-2. Backend
-3. Data science
-4. Machine Learning
-5. QA
-6. Security
-7. Frontend
+Ever wondered what kind of software engineer you should be? Take our Software Engineer quiz to find out! Our quiz is specifically tailored for MCIT students, and will take you through a series of fun questions to see what your strengths and interests are. At the end, it will recommend a specific type of software engineering role!
 
-The scores for each of these roles are stored in a global object scoreTracker, where key is the role, and the value is the score. As the user answers questions, the appropriate role(s) within the global object will be updated. After all the questions have been finished, the quiz will develier personalized recommendations based on the scores in the global object scoreTracker. 
+Include the link to your Devpost project page here: [Devpost](https://...)
+
+### Authors
+
+* **Joshua Yannix** - Devpost ID – jyannix@seas.upenn.edu – [GitHub]https://github.com/joshuayannix
+* **Name** - Devpost ID – Penn email – [GitHub](https://github.com/user_name)
+* **Name** - Devpost ID – Penn email – [GitHub](https://github.com/user_name)
+
+## Usage
+
+This section walks a prospective user through the process of installing and running the project on their local machine. The more detailed and the more accurate, the better. User-friendly instructions will entice prospective users (including judges) to engage more deeply with your project, which could improve your hackathon score.
+
+### Installation
+
+Give a step-by-step rundown of how to **install** your project.
+
+State step 1.
+```
+Provide code samples in this fenced code block.
+```
+
+State step 2.
+```
+Provide code samples in this fenced code block.
+```
+
+Etc.
+
+### Deployment
+
+Give a step-by-step rundown of how to **use** your project. Including screenshots in this section can be highly effective for highlighting specific features of your project.
+
+State step 1.
+```
+Provide code samples in this fenced code block.
+```
+
+State step 2.
+```
+Provide code samples in this fenced code block.
+```
+
+Etc.
+
+## Additional information
 
