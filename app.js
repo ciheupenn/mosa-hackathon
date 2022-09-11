@@ -1,7 +1,6 @@
 console.log('javascript connected')
 
 
-
 const questions = [
     {
       "question": "Which of these MCIT core classes did you like the most (or are the most excited about)?",
@@ -119,7 +118,6 @@ const questions = [
         "answer2": "Agree",
         "answer2Total": ['machine', 'data'],    
       },
-
 ]
 
 let scoreTracker = {
@@ -156,9 +154,6 @@ function generateQuestions (index) {
     const option1Total = questions[index].answer1Total;
     const option2Total = questions[index].answer2Total;
     
-    console.log(option1Total)
-    console.log(option2Total)
-
     //Populate html elements 
     questionEl.innerHTML = `${index + 1}. ${question.question}`
     option1.setAttribute('data-total', `${option1Total}`);
@@ -180,25 +175,23 @@ function loadNextQuestion () {
 
     // Get the array of possible roles from the radio button
     let answersStr = selectedOption.nextElementSibling.getAttribute('data-total')
-    console.log('answersStr!!!', answersStr, typeof answersStr)
+
     let newArr = answersStr.split(',')
-    console.log('newArr', newArr)
+    
 
     // based on the roles in the array, update the matching roles in the scoreTracker object
 
-    console.log(scoreTracker)
+   
 
-    for (let i = 0; i < newArr.length; i++) {                
+    for (let i = 0; i < newArr.length; i++){                
         if (scoreTracker[newArr[i]] !== undefined) {
             scoreTracker[newArr[i]]++
         }
     }
     
-    console.log(scoreTracker)
+   
 
-
-
-    //Finally we incement the current question number ( to be used as the index for each array)
+    //Finally we increment the current question number ( to be used as the index for each array)
     currentQuestion++;
 
         //once finished clear checked
@@ -212,16 +205,36 @@ function loadNextQuestion () {
         console.log('final score loading')
         console.log(scoreTracker)
 
+        // find largest score
+        let maxScore = -1;
+        let maxRole = ''
+
+        for (let item in scoreTracker) {
+            console.log(item, scoreTracker[item])
+            if (scoreTracker[item] > maxScore) {
+                maxScore = scoreTracker[item]
+                maxRole = item
+            }
+        }
+
+        console.log('maxScore:',maxScore)
+        console.log('maxRole:',maxRole)
+
+        let format = {
+            frontend: "Front-end Software Engineer",
+            backend: "Back-end Software Engineer",
+            data: "Data Scientist",
+            qa: "QA Engineer",
+            machine: "Machine Learning Engineer",
+            embedded: "Embedded Software Engineer",
+            security: "Security Software Engineer"
+        }
+
         container.style.display = 'none';
         result.innerHTML =
-         `<h1 class="final-score">Your Score: </h1>
-         <h1>Frontend Score: ${scoreTracker['frontend']}</h1>
-         <h1>Backend Score: ${scoreTracker['backend']}</h1>
-         <h1>Data Score: ${scoreTracker['data']}</h1>
-         <h1>QA Score: ${scoreTracker['qa']}</h1>
-         <h1>Machine Learning Score: ${scoreTracker['machine']}</h1>
-         <h1>Embedded Score: ${scoreTracker['embedded']}</h1>
-         <h1>Security Score: ${scoreTracker['security']}</h1>
+         `
+         <h1>Your best fit software engineering role is: ${ format[maxRole] }</h1>
+         
          
          
          
@@ -254,7 +267,6 @@ function restartQuiz(e) {
     //Reload quiz to the start
     location.reload();
     }
-
 }
 
 
@@ -262,3 +274,4 @@ generateQuestions(currentQuestion);
 nextButton.addEventListener('click', loadNextQuestion);
 previousButton.addEventListener('click',loadPreviousQuestion);
 result.addEventListener('click',restartQuiz);
+
