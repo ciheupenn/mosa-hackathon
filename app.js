@@ -25,6 +25,30 @@ const questions = [
         "answer2Total": ['backend', 'machine', 'data'],    
       },
 
+
+      {
+        "question": "Which of these MCIT electives did you enjoy the most (or are the most excited about?",
+        "answer1": "CIS 5470 Software Analysis",
+        "answer1Total": ['security', 'qa'],
+        "answer2": "CIS 5500 Database & Information Systems",
+        "answer2Total": ['backend', 'frontend'],    
+      },
+      {
+        "question": "Which of these MCIT electives did you enjoy the most (or are the most excited about?",
+        "answer1": "CIS 5510 Computer & Network Security",
+        "answer1Total": ['security', 'qa'],
+        "answer2": "CIS 5530 Networked Systems",
+        "answer2Total": ['backend', 'embedded'],    
+      },
+
+      {
+        "question": "Which of these MCIT electives did you enjoy the most (or are the most excited about?",
+        "answer1": "CIS 5550 Internet & Web Systems",
+        "answer1Total": ['embedded', 'backend'],
+        "answer2": "CIS 5150 Fundamentals of Linear Algebra & Optimization: Math for Machine Learning",
+        "answer2Total": ['machine', 'data'],    
+      },
+
 ]
 
 let scoreTracker = {
@@ -115,9 +139,21 @@ function loadNextQuestion () {
     //If the quiz is finished then we hide the questions container and show the results 
     if(currentQuestion == totalQuestions) {
         console.log('final score loading')
+        console.log(scoreTracker)
+
         container.style.display = 'none';
         result.innerHTML =
-         `<h1 class="final-score">Your score: ${5+6}</h1>
+         `<h1 class="final-score">Your score: ${'test'}</h1>
+         <h1>frontend score: ${scoreTracker['frontend']}</h1>
+         <h1>backend score: ${scoreTracker['backend']}</h1>
+         <h1>data score: ${scoreTracker['data']}</h1>
+         <h1>qa score: ${scoreTracker['qa']}</h1>
+         <h1>machine score: ${scoreTracker['machine']}</h1>
+         <h1>embedded score: ${scoreTracker['embedded']}</h1>
+         <h1>security score: ${scoreTracker['security']}</h1>
+         
+         
+         
          <div class="summary">
       
         </div>
