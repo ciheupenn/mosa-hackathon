@@ -48,6 +48,77 @@ const questions = [
         "answer2": "CIS 5150 Fundamentals of Linear Algebra & Optimization: Math for Machine Learning",
         "answer2Total": ['machine', 'data'],    
       },
+      {
+        "question": "I’m interested in robots and hardware.",
+        "answer1": "Disagree",
+        "answer1Total": ['frontend', 'backend'],
+        "answer2": "Agree",
+        "answer2Total": ['embedded', 'machine', 'data', 'security'],    
+      },
+      {
+        "question": "I’m ok with there not being a solid structure or “right answer” when solving a problem.",
+        "answer1": "Disagree",
+        "answer1Total": ['security', 'backend', 'qa', 'machine', 'embedded'],
+        "answer2": "Agree",
+        "answer2Total": ['frontend', 'data'],    
+      },
+      {
+        "question": "I have an eye for how things should look and should be laid out from a user perspective.",
+        "answer1": "Disagree",
+        "answer1Total": ['backend'],
+        "answer2": "Agree",
+        "answer2Total": ['frontend'],    
+      },
+      {
+        "question": "I really like writing test scripts and testing different parts of an application to see how it works.",       
+        "answer1": "Disagree",
+        "answer1Total": ['frontend', 'machine'],
+        "answer2": "Agree",
+        "answer2Total": ['backend', 'qa', 'security'],    
+      },
+      {
+        "question": "I like learning about new technologies and having a tech stack that constantly changes.",
+        "answer1": "Disagree",
+        "answer1Total": ['backend', 'qa', 'security', 'embedded'],
+        "answer2": "Agree",
+        "answer2Total": ['frontend', 'data', 'machine'],    
+      },
+      {
+        "question": "I like working with datasets and statistics to make recommendations and business insights.",
+        "answer1": "Disagree",
+        "answer1Total": ['frontend', 'qa', 'security', 'embedded'],
+        "answer2": "Agree",
+        "answer2Total": ['data', 'machine'],    
+      },
+      {
+        "question": "It’s very important for me to have clarity and a detailed, structure approach when solving problems.",
+        "answer1": "Disagree",
+        "answer1Total": ['frontend', 'data', 'machine'],
+        "answer2": "Agree",
+        "answer2Total": ['qa', 'security'],    
+      },
+      {
+        "question": "I like pineapple on pizza.",
+        "answer1": "Disagree",
+        "answer1Total": ['backend','data', 'qa', 'embedded', 'security'],
+        "answer2": "Agree",
+        "answer2Total": ['frontend', 'machine'],    
+      },
+      {
+        "question": "I could see myself pursuing academia in computer science and exploring more niche topics.",
+        "answer1": "Disagree",
+        "answer1Total": ['frontend', 'qa', 'security', 'embedded'],
+        "answer2": "Agree",
+        "answer2Total": ['backend', 'machine'],   
+      },
+
+      {
+        "question": "I’m ok with my work resulting in recommendations for the business/leadership to consider, rather than working directly on a product or tool.",
+        "answer1": "Disagree",
+        "answer1Total": ['backend', 'frontend', 'qa', 'embedded', 'security'],
+        "answer2": "Agree",
+        "answer2Total": ['machine', 'data'],    
+      },
 
 ]
 
@@ -143,14 +214,14 @@ function loadNextQuestion () {
 
         container.style.display = 'none';
         result.innerHTML =
-         `<h1 class="final-score">Your score: ${'test'}</h1>
-         <h1>frontend score: ${scoreTracker['frontend']}</h1>
-         <h1>backend score: ${scoreTracker['backend']}</h1>
-         <h1>data score: ${scoreTracker['data']}</h1>
-         <h1>qa score: ${scoreTracker['qa']}</h1>
-         <h1>machine score: ${scoreTracker['machine']}</h1>
-         <h1>embedded score: ${scoreTracker['embedded']}</h1>
-         <h1>security score: ${scoreTracker['security']}</h1>
+         `<h1 class="final-score">Your Score: </h1>
+         <h1>Frontend Score: ${scoreTracker['frontend']}</h1>
+         <h1>Backend Score: ${scoreTracker['backend']}</h1>
+         <h1>Data Score: ${scoreTracker['data']}</h1>
+         <h1>QA Score: ${scoreTracker['qa']}</h1>
+         <h1>Machine Learning Score: ${scoreTracker['machine']}</h1>
+         <h1>Embedded Score: ${scoreTracker['embedded']}</h1>
+         <h1>Security Score: ${scoreTracker['security']}</h1>
          
          
          
