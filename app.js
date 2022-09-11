@@ -221,26 +221,24 @@ function loadNextQuestion () {
         console.log('maxRole:',maxRole)
 
         let format = {
-            frontend: "Front-end Software Engineer",
-            backend: "Back-end Software Engineer",
-            data: "Data Scientist",
-            qa: "QA Engineer",
-            machine: "Machine Learning Engineer",
-            embedded: "Embedded Software Engineer",
-            security: "Security Software Engineer"
+            frontend: ["Front-end Software Engineer", 'You are creative and like UI and design, and like ever-changing tech stacks and new technology'],
+            backend: ["Back-end Software Engineer",' You like working with APIs and servers'],
+            data: ["Data Scientist", 'You like working with data and models'],
+            qa: ["QA Engineer", 'You like testing'],
+            machine: ["Machine Learning Engineer", 'You like building prediction models'],
+            embedded: ["Embedded Software Engineer", "You like hardware and robots"],
+            security: ["Security Software Engineer", 'You like testing security and maintaining secure systems']
         }
+        console.log('format',format)
+        console.log(format[maxRole])
 
         container.style.display = 'none';
         result.innerHTML =
          `
-         <h1>Your best fit software engineering role is: ${ format[maxRole] }</h1>
+        <h1>Your best fit software engineering role is: ${ format[maxRole][0] }</h1>
          
-         
-         
-         
-         <div class="summary">
-      
-        </div>
+         <div class="summary">${format[maxRole][1]}</div>
+
         <button class="restart">Restart Quiz</button>
          `;
         return;

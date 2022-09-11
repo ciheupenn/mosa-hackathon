@@ -1,5 +1,5 @@
 Submission for MCIT Fall 2022 MOSA Hackathon
-Contributors: Joshua Yannix, Cindy He, Jiayi Deng
+Contributors: Joshua Yannix, Jiayi Deng, Cindy He
 
 Ever wondered what kind of software engineer you should be? Take our Software Engineer quiz to find out!
 
