@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--Webpage header on browser tab-->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software Engineer Type Testtest</title>
+    <title>Software Engineer Type Test</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
+<!--Webpage contents-->
+
 <body>
-    
+    <div class="quiz-container">
+        <div class="title">What type of software engineer should you be? Take the test!</div>
+
+        <!--Quiz question-->
+        <div id="question" class="question"></div>
+
+        <!--Answers choices-->
+        <label class="choice">
+            <input type="radio" name="choice" value="1">
+            <span class="choice1"></span>
+        </label>
+        <label class="choice">
+            <input type="radio" name="choice" value="2">
+            <span class="choice2"></span>
+        </label>
+        <label class="choice">
+            <input type="radio" name="choice" value="3">
+            <span class="choice3"></span>
+        </label>
+        <label class="choice">
+            <input type="radio" name="choice" value="4">
+            <span class="choice4"></span>
+        </label>
+        <label class="choice">
+            <input type="radio" name="choice" value="5">
+            <span class="choice5"></span>
+        </label>
+
+        <!--Buttons-->
+        <div class="controls">
+            <button class="previous">Previous</button>
+            <button class="next">Next</button>
+        </div>
+
+        <!--Quiz taker's selection-->
+        <div class="result"></div>
+    </div>
 </body>
+
 </html>
