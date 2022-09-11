@@ -27,20 +27,22 @@ const questions = [
 
 ]
 
+let scoreTracker = {
+    frontend: 0,
+    backend: 0,
+    data: 0,
+    qa: 0,
+    machine: 0,
+    embedded:0,
+    security: 0
+}
 
-let frontendScore = 0
-let backendScore = 0
-let dataScore = 0
-let machineScore = 0
-let qaScore = 0
-let embeddedScore = 0
-let securityScore = 0
 
 
 let currentQuestion = 0;
 let score = [];
-let selectedAnswersData = [];
-const totalQuestions =questions.length;
+
+const totalQuestions = questions.length;
 
 const container = document.querySelector('.quiz-container');
 const questionEl = document.querySelector('.question');
@@ -80,19 +82,26 @@ function loadNextQuestion () {
         alert('Please select your answer!');
         return;
     }
-    //Get value of selected radio
 
+    // Get the array of possible roles from the radio button
+    let answersStr = selectedOption.nextElementSibling.getAttribute('data-total')
+    console.log('answersStr!!!', answersStr, typeof answersStr)
+    let newArr = answersStr.split(',')
+    console.log('newArr', newArr)
+
+    // based on the roles in the array, update the matching roles in the scoreTracker object
+
+    console.log(scoreTracker)
     
-    let testScore = selectedOption.nextElementSibling.getAttribute('data-total')
-    console.log('testScore!!!', testScore)
-
-
-    ////Add the answer score to the score array
-    score.push(answerScore);
-
-    selectedAnswersData.push()
+    for (let i = 0; i < newArr.length; i++) {                
+        if (scoreTracker[newArr[i]] !== undefined) {
+            scoreTracker[newArr[i]]++
+        }
+    }
     
-    const totalScore = score.reduce((total, currentNum) => total + currentNum);
+    console.log(scoreTracker)
+
+
 
     //Finally we incement the current question number ( to be used as the index for each array)
     currentQuestion++;
@@ -108,7 +117,7 @@ function loadNextQuestion () {
         console.log('final score loading')
         container.style.display = 'none';
         result.innerHTML =
-         `<h1 class="final-score">Your score: ${totalScore}</h1>
+         `<h1 class="final-score">Your score: ${5+6}</h1>
          <div class="summary">
             <h1>Summary</h1>
             <p>Possible - Personality Traits, see below for a summary based on your results:</p>
