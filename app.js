@@ -92,7 +92,7 @@ function loadNextQuestion () {
     // based on the roles in the array, update the matching roles in the scoreTracker object
 
     console.log(scoreTracker)
-    
+
     for (let i = 0; i < newArr.length; i++) {                
         if (scoreTracker[newArr[i]] !== undefined) {
             scoreTracker[newArr[i]]++
@@ -119,12 +119,7 @@ function loadNextQuestion () {
         result.innerHTML =
          `<h1 class="final-score">Your score: ${5+6}</h1>
          <div class="summary">
-            <h1>Summary</h1>
-            <p>Possible - Personality Traits, see below for a summary based on your results:</p>
-            <p>15 - 21- You Need Help</p>
-            <p>10 - 15 - Good Soul</p>
-            <p>5 - 10 - Meh </p>
-            <p>5 - Are You Even Real</p>
+      
         </div>
         <button class="restart">Restart Quiz</button>
          `;
