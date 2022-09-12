@@ -3,42 +3,42 @@ console.log('javascript connected')
 
 const questions = [
   {
-    "question": "Which of these MCIT core classes did you like the most (or are the most excited about)?",
+    "question": "Which of these MCIT core classes did you like the most (or are the most excited about taking)?",
     "answer1": "CIT 5910 Intro to Software Development",
     "answer1Total": ['frontend', 'backend', 'security'],
     "answer2": "CIT 5920 Mathematical Foundations of Computer Science",
     "answer2Total": ['data', 'machine', 'backend'],
   },
   {
-    "question": "Which of these MCIT core classes did you like the most (or are the most excited about)?",
+    "question": "Which of these MCIT core classes did you like the most (or are the most excited about taking)?",
     "answer1": "CIT 5930 Introduction to Computer Systems",
     "answer1Total": ['security', 'embedded', 'backend'],
     "answer2": "CIT 5940 Data Structures & Software Design",
     "answer2Total": ['backend, frontend'],
   },
   {
-    "question": "Which of these MCIT core classes did you like the most (or are the most excited about)?",
+    "question": "Which of these MCIT core classes did you like the most (or are the most excited about taking)?",
     "answer1": "CIT 5950 Computer Systems Programming",
     "answer1Total": ['security', 'embedded', 'qa'],
     "answer2": "CIT 5960 Algorithms & Computation",
     "answer2Total": ['backend', 'machine', 'data'],
   },
   {
-    "question": "Which of these MCIT electives did you enjoy the most (or are the most excited about)?",
+    "question": "Which of these MCIT electives did you enjoy the most (or are the most excited about taking)?",
     "answer1": "CIS 5470 Software Analysis",
     "answer1Total": ['security', 'qa'],
     "answer2": "CIS 5500 Database & Information Systems",
     "answer2Total": ['backend', 'frontend'],
   },
   {
-    "question": "Which of these MCIT electives did you enjoy the most (or are the most excited about)?",
+    "question": "Which of these MCIT electives did you enjoy the most (or are the most excited about taking)?",
     "answer1": "CIS 5510 Computer & Network Security",
     "answer1Total": ['security', 'qa'],
     "answer2": "CIS 5530 Networked Systems",
     "answer2Total": ['backend', 'embedded'],
   },
   {
-    "question": "Which of these MCIT electives did you enjoy the most (or are the most excited about)?",
+    "question": "Which of these MCIT electives did you enjoy the most (or are the most excited about taking)?",
     "answer1": "CIS 5550 Internet & Web Systems",
     "answer1Total": ['embedded', 'backend'],
     "answer2": "CIS 5150 Fundamentals of Linear Algebra & Optimization: Math for Machine Learning",

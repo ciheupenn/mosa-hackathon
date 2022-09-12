@@ -6,49 +6,25 @@ Software Engineer Type Quiz
 
 Ever wondered what kind of software engineer you should be? Take our Software Engineer quiz to find out! Our quiz is specifically tailored for MCIT students, and will take you through a series of fun questions to see what your strengths and interests are. At the end, it will recommend a specific type of software engineering role!
 
-Include the link to your Devpost project page here: [Devpost](https://...)
 
 ### Authors
 
-* **Joshua Yannix** - Devpost ID – jyannix@seas.upenn.edu – [GitHub]https://github.com/joshuayannix
-* **Jiayi Deng** - Devpost ID – jiayid@seas.upenn.edu – [GitHub](https://github.com/jyd-deng)
-* **Cindy He** - Devpost ID – cihe@seas.upenn.edu – [GitHub](https://github.com/ciheupenn)
+* **Joshua Yannix** – jyannix@seas.upenn.edu – [GitHub]https://github.com/joshuayannix
+* **Jiayi Deng**  – jiayid@seas.upenn.edu – [GitHub](https://github.com/jyd-deng)
+* **Cindy He**  – cihe@seas.upenn.edu – [GitHub](https://github.com/ciheupenn)
 
 ## Usage
 
 This section walks a prospective user through the process of installing and running the project on their local machine. The more detailed and the more accurate, the better. User-friendly instructions will entice prospective users (including judges) to engage more deeply with your project, which could improve your hackathon score.
 
-### Installation
-
-Give a step-by-step rundown of how to **install** your project.
-
-State step 1.
-```
-Provide code samples in this fenced code block.
-```
-
-State step 2.
-```
-Provide code samples in this fenced code block.
-```
-
-Etc.
 
 ### Deployment
 
-Give a step-by-step rundown of how to **use** your project. Including screenshots in this section can be highly effective for highlighting specific features of your project.
+No installation required. See steps on how to download and run the quiz yourself!
 
-State step 1.
-```
-Provide code samples in this fenced code block.
-```
+1. Go the github repo link here: https://github.com/ciheupenn/mosa-hackathon
+2. Click on the green Code button on the right hand side. Click Download Zip
+3. Unzip the Zip file
+4. Double click the index.html file to open quiz in our browser!
 
-State step 2.
-```
-Provide code samples in this fenced code block.
-```
-
-Etc.
-
-## Additional information
 
