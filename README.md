@@ -27,4 +27,6 @@ No installation required. See steps on how to download and run the quiz yourself
 3. Unzip the Zip file
 4. Double click the index.html file to open quiz in our browser!
 
+![GitHub Logo](/firstpage.png)
+![GitHub Logo](/result.png)
 
