@@ -12,7 +12,7 @@ Include the link to your Devpost project page here: [Devpost](https://...)
 
 * **Joshua Yannix** - Devpost ID – jyannix@seas.upenn.edu – [GitHub]https://github.com/joshuayannix
 * **Jiayi Deng** - Devpost ID – jiayid@seas.upenn.edu – [GitHub](https://github.com/jyd-deng)
-* **Name** - Devpost ID – Penn email – [GitHub](https://github.com/user_name)
+* **Cindy He** - Devpost ID – cihe@seas.upenn.edu – [GitHub](https://github.com/ciheupenn)
 
 ## Usage
 
